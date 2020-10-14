@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stress level indicator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="../../favicon.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <div class="container text-center">
+        <h1>Stresový indikátor</h1>
+        <hr>
+        <p>Vyberte ze seznamu události, kterou jste v poslední době zažili a přidejte je do seznamu</p>
+
+        <select id="select" class="maw-300">
+            <option value=""></option>
+        </select>
+
+        <div><button id="add" class="bg-purple white">Přidat</button></div>
+        <div><button id="count" class="bg-orange">Vyhodnotit</button></div>
+
+        <ol id="list" class="p-20 border-radius-medium bg-light-gray d-inline-block hide"></ol>
+
+        <div>
+            <span id="counter" class="bold"></span>
+            <span id="result"></span>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
